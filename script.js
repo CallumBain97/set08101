@@ -12,7 +12,7 @@ function checkAnswers() {
         }
     }
 
-    const quizContainer = document.getElementsByClass("quiz-container")[0];
+    const quizContainer = document.getElementsByClassName("quiz-container")[0];
 
     const scoreText = document.createElement("p");
     scoreText.textContent = `
