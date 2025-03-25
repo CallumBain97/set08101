@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sports Quiz</title>
+    <link rel="stylesheet" href="/webtech/colors.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Sports Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Scotland have won the World Cup. (True/False)</p>
+                <label>
+                    <input type="radio" name="q1" value="true"> True
+                </label>
+                <label>
+                <label>
+                    <input type="radio" name="q1" value="false"> False
+                </label>
+            </div>
+
+            <div class="question">
+                <p>2. Andy Murray has won Wimbledon. (True/False)</p>
+                <label>
+                    <input type="radio" name="q2" value="true"> True
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="false"> False
+                </label>
+            </div>
+
+            <div class="question">
+                <p>3. Scotland have won the Rugby World Cup. (True/False)</p>
+                <label>
+                    <input type="radio" name="q3" value="true"> True
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="false"> False
+                </label>
+            </div>
+
+            <div class="question">
+                <p>4. England have won the World Cup. (True/False)</p>
+                <label>
+                    <input type="radio" name="q4" value="true"> True
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="false"> False
+                </label>
+            </div>
+
+            <div class="question">
+                <p>5. San Marino have an international football team. (True/False)</p>
+                <label>
+                    <input type="radio" name="q5" value="true"> True
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="false"> False
+                </label>
+            </div>
+
+            <button type="button" onclick="checkAnswers()">Are you sure these are the answers you want to submitt?</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
