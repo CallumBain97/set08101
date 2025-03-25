@@ -9,14 +9,16 @@ function checkAnswers() {
         const answer = form.querySelector(`input[name="q${i}"]:checked`);
         if (answer && answer.value === correctAnswers[i - 1]) {
             score++;
-            answers.push("✅");
-        } else {
-            answers.push("❌");
         }
     }
 
-    result.innerHTML = `
+    const quizContainer = document.getElementsByClass("quiz-container")[0];
+
+    const scoreText = document.createElement("p");
+    scoreText.textContent = `
         <p>You scored ${score} out of ${correctAnswers.length}</p>
         <p>Answers: ${answers.join(" ")}</p>
     `;
+
+    quizContainer.appendChild(scoreText);
 }
