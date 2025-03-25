@@ -18,4 +18,12 @@ function checkAnswers() {
     scoreText.textContent = `You scored ${score} out of ${correctAnswers.length}`;
 
     quizContainer.appendChild(scoreText);
+
+    const restartButton = document.createElement("nav");
+
+    const restartLink = document.createElement("a");
+    restartLink.textContent = "RESTART QUIZ";
+    restartLink.setAttribute("href", "sports_quiz.html");
+
+    restartButton.appendChild(restartLink);
 }
