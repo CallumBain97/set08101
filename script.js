@@ -15,10 +15,7 @@ function checkAnswers() {
     const quizContainer = document.getElementsByClassName("quiz-container")[0];
 
     const scoreText = document.createElement("p");
-    scoreText.textContent = `
-        <p>You scored ${score} out of ${correctAnswers.length}</p>
-        <p>Answers: ${answers.join(" ")}</p>
-    `;
+    scoreText.textContent = `You scored ${score} out of ${correctAnswers.length}`;
 
     quizContainer.appendChild(scoreText);
 }
