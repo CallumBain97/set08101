@@ -26,4 +26,5 @@ function checkAnswers() {
     restartLink.setAttribute("href", "sports_quiz.html");
 
     restartButton.appendChild(restartLink);
+    quizContainer.appendChild(restartButton);
 }
